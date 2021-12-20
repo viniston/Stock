@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stock.Domain", "Stock.Domain\Stock.Domain.csproj", "{F6D310DA-2FD3-4ED5-ABAD-B8289912FD33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stock.Ingest", "Stock.Ingest\Stock.Ingest.csproj", "{D651DC7A-F8D5-4BEE-BAD9-8F7919D15D8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08800777-F95F-4F0F-8114-6F7196BE821E}"
+	ProjectSection(SolutionItems) = preProject
+		Stock.Ingest\all_stocks_5yr.csv = Stock.Ingest\all_stocks_5yr.csv
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6D310DA-2FD3-4ED5-ABAD-B8289912FD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D310DA-2FD3-4ED5-ABAD-B8289912FD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D310DA-2FD3-4ED5-ABAD-B8289912FD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D310DA-2FD3-4ED5-ABAD-B8289912FD33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D651DC7A-F8D5-4BEE-BAD9-8F7919D15D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D651DC7A-F8D5-4BEE-BAD9-8F7919D15D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D651DC7A-F8D5-4BEE-BAD9-8F7919D15D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D651DC7A-F8D5-4BEE-BAD9-8F7919D15D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFBE124B-5B6D-4A45-8C79-92A9D0FCE7E4}
+	EndGlobalSection
+EndGlobal

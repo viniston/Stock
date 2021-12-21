@@ -35,6 +35,8 @@ namespace Stock.Ingest
 
             bulkAll.Wait(TimeSpan.FromMinutes(30), _ => _logger.LogInformation("Data Indexed"));
             await _elasticClient.Indices.PutAliasAsync("stock-demo-v1", "stock-demo", ct: stoppingToken);
+
+            _applicationLifetime.StopApplication();
         }
     }
 }

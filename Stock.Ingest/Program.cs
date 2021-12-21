@@ -16,9 +16,14 @@ namespace Stock.Ingest
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureServices((hostContext, services) =>
+                .ConfigureServices((_, services) =>
                 {
+                    // Ingest
                     services.AddHostedService<StockIngestWorker>();
+
+                    // Re-indexing
+                    //services.AddHostedService<ReindexWorker>();
+
                     services.AddSingleton<IElasticClient>(serviceProvider =>
                     {
                         var config = serviceProvider.GetRequiredService<IConfiguration>();
